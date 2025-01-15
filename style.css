@@ -1,0 +1,398 @@
+/* Navbar */
+.navbar-custom {
+    background-color: #3cff00;
+    border-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 0!important;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+.navbar-custom .navbar-brand {
+    color: #ff006a;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+.navbar-custom .navbar-brand img {
+    height: 40px;
+    margin-right: 10px;
+}
+.navbar-custom .navbar-nav > li > a {
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+.navbar-custom .navbar-nav > li > a:hover,
+.navbar-custom .navbar-nav > li.active > a {
+    color: #ff006a;
+}
+.navbar-custom .navbar-nav > li > a .glyphicon {
+    margin-right: 5px;
+}
+.navbar-custom .navbar-form .form-control {
+    border: 1px solid #ff006a;
+}
+.navbar-custom .navbar-form .btn {
+    background-color: #ff006a;
+    color: #fff;
+    border: none;
+    transition: background-color 0.3s;
+}
+.navbar-custom .navbar-form .btn:hover {
+    background-color: #ff006a;
+}
+
+/* carousel */
+.carousel-inner > .item > img {
+    width: 100%;
+    height: 95vh;
+}
+.carousel-control.left, .carousel-control.right {
+    background-image: none;
+    color: #e74c3c;
+}
+.carousel-indicators li {
+    background-color: #e74c3c;
+}
+.carousel-indicators .active {
+    background-color: #fff;
+}
+/* carousel end  */
+
+
+/* card start */
+.card {
+    border: 1px solid #ddd; /* Mengatur border card */
+    border-radius: 10px; /* Mengatur border radius card */
+    margin: 100px 0; /* Mengatur margin atas dan bawah card */
+    text-align: center; /* Mengatur teks card menjadi center */
+    position: relative; /* Mengatur posisi card menjadi relative */
+    height: 450px; /* Mengatur tinggi card */
+    display: flex; /* Mengatur display card menjadi flex */
+    flex-direction: column; /* Mengatur arah flex card menjadi kolom */
+    justify-content: space-between; /* Mengatur justify content card menjadi space-between */
+    overflow: hidden; /* Mengatur overflow card menjadi hidden */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Mengatur transisi transform dan box-shadow card */
+    will-change: transform; /* Mengatur will-change card menjadi transform */
+}
+
+.card:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Mengatur bayangan card saat di-hover */
+    transform: translateY(-5px); /* Mengangkat card saat di-hover */
+    position: relative; /* Pastikan posisi relatif */
+}
+
+.card img {
+    max-width: 100%; /* Mengatur lebar maksimal gambar card */
+    border-radius: 10px; /* Mengatur border radius gambar card */
+    height: 300px; /* Mengatur tinggi gambar card */
+    object-fit:fill; /* Mengatur gambar card agar sesuai dengan ukuran */
+}
+.card .new-badge {
+    position: absolute; /* Mengatur posisi badge menjadi absolute */
+    top: 10px; /* Mengatur posisi top badge */
+    right: 10px; /* Mengatur posisi right badge */
+    background-color: red; /* Mengatur warna latar belakang badge */
+    color: white; /* Mengatur warna teks badge */
+    padding: 5px 10px; /* Mengatur padding badge */
+    border-radius: 3px; /* Mengatur border radius badge */
+    font-size: 12px; /* Mengatur ukuran font badge */
+    text-transform: uppercase; /* Mengatur teks badge menjadi uppercase */
+}
+.card .title {
+    font-size: 1.2em; /* Mengatur ukuran font judul card */
+    font-weight: bold; /* Mengatur ketebalan font judul card */
+    margin: 10px 0; /* Mengatur margin atas dan bawah judul card */
+    white-space: nowrap; /* Mengatur white-space judul card */
+    overflow: hidden; /* Mengatur overflow judul card */
+    text-overflow: ellipsis; /* Mengatur teks overflow judul card menjadi ellipsis */
+    transition: all 0.3s ease; /* Mengatur transisi semua properti judul card */
+}
+.card .price {
+    font-size: 1.5em; /* Mengatur ukuran font harga card */
+    color: #333; /* Mengatur warna teks harga card */
+    margin-bottom: 10px; /* Mengatur margin bawah harga card */
+}
+.card .old-price {
+    text-decoration: line-through; /* Mengatur teks harga lama menjadi coret */
+    color: #999; /* Mengatur warna teks harga lama */
+}
+.card .rating .glyphicon {
+    color: #f39c12; /* Mengatur warna ikon rating */
+}
+.card .reviews {
+    color: #999; /* Mengatur warna teks ulasan */
+}
+.card .buttons {
+    position: absolute; /* Mengatur posisi tombol menjadi absolute */
+    top: 50%; /* Mengatur posisi top tombol */
+    left: 50%; /* Mengatur posisi left tombol */
+    transform: translate(-50%, -50%); /* Mengatur transform tombol */
+    display: none; /* Mengatur display tombol menjadi none */
+    flex-direction: column; /* Mengatur arah flex tombol menjadi kolom */
+    gap: 10px; /* Mengatur jarak antar tombol */
+    transition: opacity 0.3s ease; /* Mengatur transisi opacity tombol */
+}
+.card .btn {
+    background-color: #15323d; /* Mengatur warna latar belakang tombol */
+    color: #fff; /* Mengatur warna teks tombol */
+    border: none; /* Menghilangkan border tombol */
+    padding: 10px 20px; /* Mengatur padding tombol */
+    border-radius: 5px; /* Mengatur border radius tombol */
+    text-transform: uppercase; /* Mengatur teks tombol menjadi uppercase */
+    font-weight: bold; /* Mengatur ketebalan font tombol */
+}
+.card .btn:hover {
+    background-color: #00ff6a; /* Mengatur warna latar belakang tombol saat di-hover */
+}
+.card:hover .buttons {
+    display: flex; /* Mengatur display tombol menjadi flex saat card di-hover */
+    opacity: 1; /* Mengatur opacity tombol menjadi 1 saat card di-hover */
+}
+.card:hover .title {
+    white-space: normal; /* Mengatur white-space judul card menjadi normal saat di-hover */
+    overflow: visible; /* Mengatur overflow judul card menjadi visible saat di-hover */
+    background-color: rgba(255, 255, 255, 0.9); /* Mengatur warna latar belakang judul card saat di-hover */
+    padding: 5px; /* Mengatur padding judul card saat di-hover */
+}
+/* card end */
+
+/* pagination  */
+.pagination-centered {
+    display: flex!important;
+    justify-content: center!important;
+}
+.pagination > li > a {
+    color: #e74c3c !important;
+}
+.pagination > li > a:hover {
+    background-color: #e74c3c !important;
+    color: white !important;
+}
+/* pagination end */
+
+/* pelayanan */
+.service-box {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15px 0;
+    text-align: center;
+    background-color: #f9f9f9;
+    transition: box-shadow 0.3s ease;
+}
+
+.service-box:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.service-box h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #15323d;
+}
+
+.service-box p {
+    font-size: 1em;
+    color: #666;
+}
+/* pelayanan end */
+
+/* testimoni */
+.testimonial-section {
+    padding: 80px 0;
+   
+}
+
+.testimonial-card {
+    background: rgb(179, 226, 148);
+    border-radius: 15px;
+    padding: 30px;
+    margin: 15px 0;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.testimonial-img {
+    width: 80px;
+    height: 80px;
+    margin: -60px auto 20px;
+}
+
+.testimonial-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 4px solid white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.testimonial-content {
+    text-align: center;
+    color: #333;
+}
+
+.testimonial-content p {
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.testimonial-content h5 {
+    color: #15323d;
+    margin-bottom: 5px;
+}
+
+.testimonial-content span {
+    color: #666;
+    font-size: 14px;
+}
+/* testimoni end */
+
+/* footer */
+.modern-footer {
+    background: #000000;
+    padding: 60px 0 0;
+    color: #fff;
+    font-size: 14px;
+}
+
+.modern-footer h3 {
+    font-size: 28px;
+    margin: 0 0 20px;
+    padding: 2px 0;
+    line-height: 1;
+    font-weight: 700;
+}
+
+.modern-footer h3 span {
+    color: #00ff6a;
+}
+
+.modern-footer h4 {
+    font-size: 16px;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 12px;
+    margin-bottom: 20px;
+}
+
+.modern-footer h4::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 2px;
+    background: #00ff6a;
+    bottom: 0;
+    left: 0;
+}
+
+.footer-info p {
+    line-height: 24px;
+    margin-bottom: 0;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    font-size: 18px;
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    line-height: 40px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    margin-right: 10px;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    background: #00ff6a;
+    color: #15323d;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links ul li {
+    padding: 8px 0;
+}
+
+.footer-links ul li:first-child {
+    padding-top: 0;
+}
+
+.footer-links ul a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-links ul a:hover {
+    color: #00ff6a;
+    padding-left: 5px;
+}
+
+.footer-newsletter form {
+    margin-top: 20px;
+    position: relative;
+}
+
+.footer-newsletter input[type="email"] {
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    background: transparent;
+    color: #fff;
+    width: 100%;
+    border-radius: 25px;
+}
+
+.footer-newsletter button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border: 0;
+    background: #00ff6a;
+    font-size: 16px;
+    padding: 0 20px;
+    border-radius: 0 25px 25px 0;
+    transition: 0.3s;
+    color: #15323d;
+}
+
+.footer-newsletter button:hover {
+    background: #fff;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding: 20px 0;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.copyright {
+    font-size: 13px;
+}
+
+.copyright a {
+    color: #00ff6a;
+    text-decoration: none;
+}
+
+.copyright a:hover {
+    color: #fff;
+}
+/* footer end */
+
+.kontak{
+    margin: 50px 0;
+}
