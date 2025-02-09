@@ -64,7 +64,7 @@
 /* card start */
 .card {
     border: 1px solid #ddd; /* Mengatur border card */
-    border-radius: 10px; /* Mengatur border radius card */
+    border-radius: 18px; /* Mengatur border radius card */
     margin: 100px 0; /* Mengatur margin atas dan bawah card */
     text-align: center; /* Mengatur teks card menjadi center */
     position: relative; /* Mengatur posisi card menjadi relative */
